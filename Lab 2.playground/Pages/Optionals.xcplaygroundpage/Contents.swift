@@ -129,13 +129,14 @@ In this Playground we have looked at some of the capabilities of optionals in Sw
 
 
 // Write your answers here:
+var username: String? = "Andrew"
 
+if let username = username {
+    print(username)
+} else {
+    print("Username is nil")
+}
 
-
-
-
-
-
-
-
-
+username = nil
+let anonymousUsername = username ?? "Anonymous"
+print(anonymousUsername)
